@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+
+    <title>Budget App</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="title">Budget App</div>
+
+        <div class="set-budget">
+
+            <label for="get-budget">Budget</label>
+            <input id="get-budget" type="number" placeholder="Enter Budget">
+
+            <button id="budget-btn">Set Budget</button>
+
+        </div>
+
+        <div class="budget-details">
+
+            <div class="expense-name-div">
+                <label for="expense-name">Expense Name</label>
+                <input id="expense-name" type="text" placeholder="Enter Expense">
+            </div>
+
+            <div class="expense-amount-div">
+                <label for="expense-amount">Amount</label>
+                <input id="expense-amount" type="number" placeholder="Enter Amount">
+            </div>
+
+            <div class="expense-category-div">
+                <label for="filter-category">Select Category</label>
+                <select id="filter-category">
+                    <option value="All" disabled selected>Select Budget Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utilities ">Utilities</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <button id="add-expense"><i class="fa-solid fa-plus"></i></button>
+
+        </div>
+
+    </div>
+
+
+    <!---- Budget Banner Open Tag ------>
+    <div class="budget-banner">
+        <div class="banner-card">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="info">
+                <h3><span>Rs: </span><span id="budget" class="budget_card">Amount</span></h3>
+                <p>Budget</p>
+            </span>
+        </div>
+        <div class="banner-card">
+            <i class="fa-solid fa-credit-card"></i>
+            <span class="info">
+                <h3><span>Rs: </span><span id="expenses" class="expenses_card">00</span></h3>
+                <p>Expenses</p>
+            </span>
+        </div>
+        <div class="banner-card">
+            <i class="fa-solid fa-rupee-sign"></i>
+            <span class="info">
+                <h3><span>Rs: </span><span id="balance" class="balance_card">00</span></h3>
+                <p>Balance</p>
+            </span>
+        </div>
+    </div>
+    <!---- Budget Banner Close Tag ------>
+
+
+
+
+    <!------ Table Container Start Tag ------>
+    <div class="tbl_container">
+        <h3>Budget Details</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbl-content">
+                
+            </tbody>
+        </table>
+
+    </div>
+    <!------ Table Container Close Tag ------>
+
+
+    <!------ Footer Start Tag ------>
+    <footer>
+        <p>Develop by Abdul Ahad</p>
+    </footer>
+    <!------ Footer Start Close ------>
+
+    <script src="javascript/app.js"></script>
+
+</body>
+
+
+</html>
