@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+/* <!--- Budget Title Style Start ----> */
+
+.container .title {
+    width: fit-content;
+    margin: .7em auto 1em;
+    font-size: 2.8em;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 1.2px;
+    text-shadow: 0px 5px 15px #1f1f1f46;
+}
+
+/* <!--- Budget Title Style End ----> */
+
+
+
+/* <!--- Get Budget Style Start ----> */
+
+.container .set-budget {
+    width: 60%;
+    background-color: #003049;
+    color: #fff;
+    padding: 2em 1em;
+    margin: .5em auto 1.5em;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.container .set-budget label {
+    margin-right: .3em;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    text-shadow: 1px 1px 1px #dadada;
+}
+
+.container .set-budget #get-budget {
+    background-color: #dadada;
+    color: #1f1f1f;
+    width: 8em;
+    padding: .6em .8em;
+    font-size: 1.6em;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.container .set-budget #budget-btn {
+    color: #212529;
+    background-color: #F8F9FA;
+    padding: .4em .8em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.container .set-budget #budget-btn:active {
+    color: #F8F9FA;
+    background-color: #00A6FB;
+    transform: scale(.9);
+}
+
+/* <!--- Get Budget Style End ----> */
+
+
+
+/* <!--- Get Expense Details Style Start ----> */
+
+.container .budget-details {
+    width: 75%;
+    background-color: #a4a4a4;
+    padding: 1em 2em;
+    margin: .5em auto 1.5em;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container .budget-details
+.expense-name-div,
+.expense-amount-div,
+.expense-category-div {
+    width: 11em;
+}
+
+.container .budget-details label {
+    padding: .2em .4em;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+}
+
+.container .budget-details input {
+    width: 9em;
+    background-color: #f7f7f7;
+    color: #1f1f1f;
+    padding: .4em .8em;
+    margin: .2em 0;
+    font-size: 1em;
+    letter-spacing: 1.1px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.container .budget-details select {
+    width: 11em;
+    padding: .4em .8em;
+    margin: .2em 0;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.container .budget-details select option {
+    background-color: #1f1f1f;
+    color: #dadada;
+    padding: .2em;
+}
+
+.container .budget-details #add-expense {
+    padding: .6em .9em;
+    font-size: 1.5em;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.container .budget-details #add-expense:active {
+    transform: scale(.9);
+}
+/* <!--- Get Expense Details Style Close ----> */
+
+
+
+/* <!---- Budget Banner Style Open  ------> */
+.budget-banner {
+    width: 75%;
+    background-color: #051923;
+    color: #dadada;
+    padding: 1.5em 1.2em;
+    margin: .5em auto 1.5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.budget-banner .banner-card {
+    display: flex;
+    align-items: center;
+}
+
+.budget-banner .banner-card i {
+    font-size: 2em;
+    padding: .4em .6em;
+    margin-right: .3em;
+    text-shadow: 1px 1px 30px #dadada;
+}
+
+.budget-banner.banner-card h3 {
+    text-shadow: 1px 1px 30px #dadada;
+}
+/* <!---- Budget Banner Style Open  ------> */
+
+
+
+
+/* <!------ Table Container Style Start ------> */
+
+.tbl_container {
+    width: 75%;
+    margin: 0 auto 2em;
+    border-radius: 10px;
+}
+
+.tbl_container h3 {
+    width: fit-content;
+    margin: 1em 0 .5em;
+    font-size: 1.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.tbl_container table {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.tbl_container thead{
+    background-color: #1f1f1f;
+    color: #dadada;
+}
+
+.tbl_container thead th {
+    padding: .55em 0;
+    font-size: 1.25em;
+}
+
+.tbl_container #tbl-content td {
+    background-color: #dadada;
+    color: #1f1f1f;
+    padding: .5em;
+    font-size: 1.15em;
+    border-bottom: 1px solid #1f1f1f;
+    text-transform: capitalize;
+}
+
+.tbl_container .delete-expense-row {
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    background-color: transparent;
+}
+.tbl_container .delete-expense-row:active {
+    transform: scale(.9);
+}
+/* <!------ Table Container Style Close ------> */
+
+
+
+/* <!------ Footer Style Start ------> */
+footer p {
+    margin: 2em 0;
+    text-align: center;
+}
+/* <!------ Footer Style Close ------> */

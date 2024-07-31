@@ -1,0 +1,210 @@
+@media (width <=900px) {
+
+    /* <!--- Budget Title Style Start ----> */
+    .container .title {
+        font-size: 2.5em;
+    }
+    /* <!--- Budget Title Style End ----> */
+
+
+    /* <!--- Get Budget Style Start ----> */
+    .container .set-budget {
+        width: 85%;
+        padding: 1.5em .75em;
+        margin: .4em auto 1.25em;
+    }
+    .container .set-budget label {
+        margin-right: .25em;
+        font-size: 1.75em;
+        letter-spacing: 1.2px;
+    }
+    .container .set-budget #get-budget {
+        width: 7em;
+        padding: .5em .7em;
+        font-size: 1.4em;
+    }
+    .container .set-budget #budget-btn {
+        padding: .5em .8em;
+        font-size: 1.1em;
+    }
+    /* <!--- Get Budget Style Start ----> */
+
+
+    /* <!--- Get Expense Details Style Start ----> */
+    .container .budget-details {
+        width: 90%;
+        padding: 1em 1.5em;
+        margin: .5em auto 1.5em;
+    }
+    .container .budget-details .expense-name-div,
+    .expense-amount-div,
+    .expense-category-div {
+        width: 10em;
+    }
+    .container .budget-details label {
+        padding: .2em .4em;
+        font-size: 1em;
+    }
+    .container .budget-details input {
+        width: 9em;
+        padding: .4em .7em;
+        font-size: .9em;
+    }
+    .container .budget-details select {
+        width: 10em;
+        padding: .4em .7em;
+        font-size: .9em;
+    }
+    .container .budget-details #add-expense {
+        padding: .5em .8em;
+        font-size: 1.4em;
+    }
+    /* <!--- Get Expense Details Style Close ----> */
+
+
+
+    /* <!---- Budget Banner Style Open  ------> */
+    .budget-banner {
+        width: 90%;
+        padding: 1.2em 1em;
+    }
+    .budget-banner .banner-card i {
+        font-size: 1.75em;
+        padding: .4em .6em;
+    }
+    /* <!---- Budget Banner Style Open  ------> */
+
+
+
+    /* <!------ Table Container Style Start ------> */
+    .tbl_container {
+        width: 90%;
+        margin: 0 auto 1.5em;
+    }
+    .tbl_container h3 {
+        margin: 1em 0 .5em;
+        font-size: 1.5em;
+    }
+    .tbl_container thead th {
+        padding: .45em 0;
+        font-size: 1em;
+    }
+    .tbl_container #tbl-content td {
+        padding: .4em;
+        font-size: 1em;
+    }
+    .tbl_container .delete-expense-row {
+        font-size: 1.1em;
+    }
+    /* <!------ Table Container Style Close ------> */
+}
+
+
+
+@media (width <= 600px) {
+
+    /* <!--- Budget Title Style Start ----> */
+    .container .title {
+        font-size: 2em;
+    }
+    /* <!--- Budget Title Style End ----> */
+
+
+    /* <!--- Get Budget Style Start ----> */
+    .container .set-budget {
+        width: 90%;
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+    }
+    .container .set-budget label {
+        font-size: 1.5em;
+        letter-spacing: 1.1px;
+    }
+    .container .set-budget #get-budget {
+        width: 65%;
+        padding: .55em .9em;
+        font-size: 1.25em;
+    }
+    .container .set-budget #budget-btn {
+        padding: .55em .9em;
+        font-size: 1.1em;
+    }
+    /* <!--- Get Budget Style Start ----> */
+
+
+    /* <!--- Get Expense Details Style Start ----> */
+    .container .budget-details {
+        flex-direction: column;
+    }
+    .container .budget-details .expense-name-div,
+    .expense-amount-div,
+    .expense-category-div {
+        width: 65%;
+    }
+    .container .budget-details label {
+        display: block;
+        padding: .2em .4em;
+        font-size: 1em;
+    }
+    .container .budget-details input {
+        width: 100%;
+        padding: .4em .8em;
+        font-size: 1em;
+    }
+    .container .budget-details select {
+        width: 100%;
+        padding: .4em .8em;
+        font-size: 1em;
+    }
+    .container .budget-details #add-expense {
+        margin-top: .5em;
+        font-size: 1.5em;
+    }
+    /* <!--- Get Expense Details Style Close ----> */
+
+
+
+    /* <!---- Budget Banner Style Open  ------> */
+    .budget-banner {
+        padding: 1em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    /* <!---- Budget Banner Style Open  ------> */
+
+
+
+    /* <!------ Table Container Style Start ------> */
+    .tbl_container {
+        width: 100%;
+        margin: 0 auto 1.5em;
+    }
+    .tbl_container h3 {
+        margin: 1em 1em .5em;
+        font-size: 1.5em;
+    }
+    .tbl_container thead th {
+        padding: .45em;
+        font-size: .7em;
+    }
+    .tbl_container #tbl-content td {
+        padding: .4em;
+        font-size: .7em;
+    }
+    .tbl_container .delete-expense-row {
+        font-size: 1em;
+    }
+    /* <!------ Table Container Style Close ------> */
+
+
+
+    /* <!------ Footer Style Start ------> */
+footer p {
+    margin: 1.5em 0;
+    font-size: .7em;
+}
+/* <!------ Footer Style Close ------> */
+}
