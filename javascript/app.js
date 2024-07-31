@@ -3,7 +3,7 @@ document.getElementById('budget-btn').addEventListener('click', budget)
 function budget()
 {
     let getBudget = document.getElementById('get-budget').value
-    
+
     if (getBudget == '') {
         alert('Enter your Budget');
         return
@@ -11,11 +11,8 @@ function budget()
 
     document.querySelector('#budget').textContent = getBudget
     document.querySelector('#balance').textContent = getBudget
-    
-    
 }
 
-const expenseItem = []
 
 document.getElementById('add-expense').addEventListener('click', expense)
 
@@ -52,16 +49,6 @@ function expense()
             return
         }
 
-        let item = {
-            Name: expenseName.value,
-            Amount: expenseAmount.value,
-            Category: filterCategory.value,
-        }
-
-        expenseItem.push(item)
-
-        localStorage.setItem('item', JSON.stringify(expenseItem))
-
         expensesCard.textContent = expenseValue;
         balanceCard.textContent = balanceValue
 
@@ -79,7 +66,7 @@ function expense()
     }
     expenseName.value = ''
     expenseAmount.value = ''
-    filterCategory.value = selected
+    filterCategory.value = ''
 }
 
 
@@ -114,6 +101,5 @@ function updateExpensesAndBalance()
     const budget = parseInt(document.querySelector('#budget').textContent);
     document.querySelector('#balance').textContent = budget - totalExpenses;
 }
-
 
 deleteEvent();
